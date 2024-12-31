@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import path from 'path';
-import {connectDb} from './db/connectDB.js'
+import {connectDB} from './db/connectDB.js'
 // import { connectDb } from './db/connectDb.js';//
 import authRoutes from './routes/auth.route.js'
 
@@ -29,7 +29,7 @@ if(process.env.NODE_ENV === "production"){
 
 
 app.listen(PORT,()=>{
-    connectDb();
+    connectDB();
     console.log("server is running on port :", PORT)
 });
 
