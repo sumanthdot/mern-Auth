@@ -2,7 +2,7 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import FloatingShape from "./components/FloatingShape";
 
-import SignUpPage from "./pages/SignUpPage";
+import SignupPage from "./pages/SignupPage";
 import LoginPage from "./pages/LoginPage";
 import EmailVerificationPage from "./pages/EmailVerificationPage";
 import HomePage from "./pages/HomePage.jsx";
@@ -72,7 +72,7 @@ function App() {
 					path='/signup'
 					element={
 						<RedirectAuthenticatedUser>
-							<SignUpPage />
+							<SignupPage />
 						</RedirectAuthenticatedUser>
 					}
 				/>
