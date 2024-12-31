@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Navigate, Route, Routes } from "react-router-dom";
 import FloatingShape from "./components/FloatingShape";
 

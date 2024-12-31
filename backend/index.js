@@ -4,7 +4,7 @@ import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import path from 'path';
 
-import { connectDb } from './db/connectDB.js';
+import { connectDb } from './db/connectDb.js';
 import authRoutes from './routes/auth.route.js'
 
 dotenv.config();
@@ -32,3 +32,4 @@ app.listen(PORT,()=>{
     connectDb();
     console.log("server is running on port :", PORT)
 });
+
